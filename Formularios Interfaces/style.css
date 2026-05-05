@@ -1,0 +1,275 @@
+/* Variables globales */
+:root {
+    --colorUno: #FFFFFF;
+    --colorDos: #FBBC05;
+    --colorTres: #f5d76e;
+    --colorCuatro: #293A4E;
+    --colorCinco: #000000;
+    --colorFondo: #f0f4f8;
+    --fuentePrincipal: "Segoe UI", sans-serif;
+}
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales */
+html {
+    background-color: var(--colorFondo);
+}
+
+body {
+    font-family: var(--fuentePrincipal);
+    color: #333;
+}
+
+.container {
+    max-width: 120rem;
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* Sección Encabezado */
+header {
+    background-color: var(--colorDos);
+    padding: 20px 40px;
+}
+
+.navbar__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.navbar__logo {
+    font-size: 2rem;
+    color: var(--colorCinco);
+    font-weight: 900;
+    margin: 0;
+}
+
+.navbar__subtitle {
+    font-size: 1rem;
+    color: var(--colorCinco);
+    font-weight: 400;
+}
+
+/* Sección Navegación */
+.nav__container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background-color: var(--colorDos);
+    padding: 20px 40px;
+    flex-wrap: wrap;
+}
+
+.nav__btn {
+    padding: 15px 40px;
+    background-color: transparent;
+    color: var(--colorCinco);
+    border: 3px solid var(--colorCinco);
+    border-radius: 12px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.nav__btn:hover,
+.nav__btn--activo {
+    background-color: var(--colorUno);
+    color: var(--colorCinco);
+}
+
+/* Sección Principal */
+main {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 2rem;
+    padding: 30px 15px;
+    flex-wrap: wrap;
+    background-color: var(--colorFondo);
+}
+
+/* Formularios */
+.contact__form {
+    background-color: var(--colorUno);
+    padding: 20px;
+    border-radius: 8px;
+    flex: 1;
+    min-width: 280px;
+}
+
+.contact__title {
+    font-size: 1.4rem;
+    color: var(--colorCinco);
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.contact__subtitle {
+    color: var(--colorCinco);
+    font-size: 1rem;
+    font-weight: 700;
+    margin: 15px 0 8px;
+    border-bottom: 2px solid var(--colorDos);
+    padding-bottom: 4px;
+}
+
+/* Inputs en grid de 2 columnas */
+.contact__form form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.6rem;
+}
+
+/* Elementos que ocupan todo el ancho */
+.contact__form form h3,
+.contact__form form textarea,
+.contact__form form button,
+.contact__form form .checkbox__label {
+    grid-column: 1 / -1;
+}
+
+.contact__form input,
+.contact__form select,
+.contact__form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    font-family: var(--fuentePrincipal);
+    width: 100%;
+    background-color: var(--colorUno);
+    color: #555;
+}
+
+.contact__form input:focus,
+.contact__form select:focus,
+.contact__form textarea:focus {
+    border-color: var(--colorDos);
+    outline: none;
+}
+
+.contact__form textarea {
+    height: 80px;
+    resize: none;
+}
+
+/* Checkbox */
+.checkbox__label {
+    font-weight: 700;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.checkbox__label input[type="checkbox"] {
+    width: 1rem;
+    height: 1rem;
+    accent-color: var(--colorDos);
+}
+
+/* Botón */
+.contact__form form button {
+    padding: 10px;
+    background-color: var(--colorDos);
+    color: var(--colorUno);
+    border: none;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    font-weight: bold;
+    cursor: pointer;
+    width: auto;
+    align-self: flex-start;
+}
+
+.contact__form form button:hover {
+    background-color: var(--colorCuatro);
+}
+
+/* Pie de Página */
+.footer {
+    background-color: var(--colorCuatro);
+    padding: 2rem 3rem 1rem;
+    margin-top: 2rem;
+}
+
+.footer__container {
+    display: flex;
+    gap: 4rem;
+    padding-bottom: 1.5rem;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.footer__social h3,
+.footer__links h3 {
+    color: var(--colorUno);
+    font-weight: 700;
+    font-size: 1rem;
+    border-bottom: 2px solid var(--colorDos);
+    padding-bottom: 4px;
+    margin-bottom: 12px;
+}
+
+.social__icons {
+    display: flex;
+    gap: 0.8rem;
+    margin-top: 0.5rem;
+}
+
+.social__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 2px solid var(--colorDos);
+    color: var(--colorUno);
+    font-size: 1.1rem;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.social__btn:hover {
+    background-color: var(--colorDos);
+    color: var(--colorCinco);
+}
+
+.fa-brands {
+    font-size: 1.1rem;
+}
+
+.links a {
+    display: block;
+    margin: 0.4rem 0;
+    color:#f0f4f8;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.links a:hover {
+    color: var(--colorDos);
+}
+
+hr {
+    border: none;
+    border-top: 1px solid rgba(255,255,255,0.15);
+    margin: 0.5rem 0;
+}
+
+.footer__copy {
+    color: #aaa;
+    text-align: center;
+    padding: 0.8rem 0 0;
+    font-size: 0.85rem;
+}
