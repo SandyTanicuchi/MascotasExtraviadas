@@ -1,0 +1,42 @@
+.contact-section {
+  padding: 4rem 0;
+}
+
+.contact__wrapper {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.contact__form {
+  background: white;
+  padding: 2rem;
+  border-radius: 24px;
+  flex: 1;
+}
+
+.contact__form form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact__form input,
+.contact__form textarea {
+  padding: 1rem;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+}
+
+.contact__map {
+  flex: 1;
+  overflow: hidden;
+  border-radius: 24px;
+}
+
+.contact__map iframe {
+  width: 100%;
+  height: 100%;
+  min-height: 350px;
+  border: none;
+}

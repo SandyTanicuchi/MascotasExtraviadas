@@ -1,0 +1,40 @@
+.download {
+  padding: 4rem 0;
+  background: linear-gradient(120deg, #293A4E 0%, #1f2a3a 100%);
+  color: white;
+}
+
+.download__container {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+.download__image {
+  flex: 1;
+  text-align: center;
+}
+
+.download__image img {
+  max-width: 280px;
+}
+
+.download__info {
+  flex: 1;
+}
+
+.download__info h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.download__buttons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.download__buttons img {
+  height: 50px;
+}

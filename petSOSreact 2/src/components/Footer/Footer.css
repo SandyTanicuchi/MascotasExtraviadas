@@ -1,0 +1,172 @@
+.footer {
+
+  background-color: #293A4E;
+
+  color:white;
+
+  padding:4rem 0 1rem;
+
+}
+
+
+.footer__container {
+
+  display:grid;
+
+  grid-template-columns:
+  repeat(auto-fit,minmax(250px,1fr));
+
+  gap:3rem;
+
+}
+
+
+
+.footer__brand h2 {
+
+  font-size:2rem;
+
+  margin-bottom:1rem;
+
+}
+
+
+.footer__brand span {
+
+  background:#FBBC05;
+
+  color:#293A4E;
+
+  padding:5px 10px;
+
+  border-radius:10px;
+
+}
+
+
+
+.footer__brand p {
+
+  color:#ddd;
+
+  line-height:1.6;
+
+  max-width:300px;
+
+}
+
+
+
+.footer h3 {
+
+  color:#FBBC05;
+
+  margin-bottom:1rem;
+
+}
+
+
+
+.footer__links {
+
+  display:flex;
+
+  flex-direction:column;
+
+  gap:10px;
+
+}
+
+
+
+.footer__links a {
+
+  color:white;
+
+  transition:.3s;
+
+}
+
+
+
+.footer__links a:hover {
+
+  color:#FBBC05;
+
+  transform:translateX(5px);
+
+}
+
+
+
+.footer__contact p {
+
+  margin-bottom:10px;
+
+}
+
+
+
+.social__icons {
+
+  display:flex;
+
+  gap:15px;
+
+  margin-top:1rem;
+
+}
+
+
+
+.social__icons a {
+
+  width:40px;
+
+  height:40px;
+
+  display:flex;
+
+  justify-content:center;
+
+  align-items:center;
+
+  border-radius:50%;
+
+  background:rgba(255,255,255,.15);
+
+  color:white;
+
+  transition:.3s;
+
+}
+
+
+
+.social__icons a:hover {
+
+  background:#FBBC05;
+
+  color:#293A4E;
+
+  transform:translateY(-5px);
+
+}
+
+
+
+.footer__bottom {
+
+  margin-top:3rem;
+
+  padding-top:1rem;
+
+  border-top:1px solid rgba(255,255,255,.2);
+
+  text-align:center;
+
+  color:#ccc;
+
+  font-size:.9rem;
+
+}
